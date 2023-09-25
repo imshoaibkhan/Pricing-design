@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mooli&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-color: #6a919e;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Roboto", sans-serif;
+  gap: 20px;
+}
+
+h1 {
+  letter-spacing: 1px;
+  font-size: 1.9rem;
+  margin-top: 10px;
+  text-transform: uppercase;
+  color: white;
+  font-weight: 700;
+}
+
+p {
+  font-size: 1.1rem;
+  margin: -10px 0 10px;
+  color: white;
+  font-family: "Mooli", sans-serif;
+}
+
+.pricing-container {
+  display: flex;
+  justify-content: center;
+}
+
+.pricing {
+  background-color: #fff;
+  border: 1px solid "#eee";
+  margin: 10px;
+  text-align: center;
+  width: 300px;
+}
+
+.pricing.highlight {
+  border-top: 2px solid #50bc01;
+  box-shadow: 0 0 20px 10px rgba(255, 255, 255, 0.268);
+}
+
+.pricing h1 {
+  color: #5caefe;
+  margin: 30px 0 0;
+  font-weight: 600;
+  font-size: 2.5rem;
+}
+
+.pricing .month {
+  color: black;
+  font-size: 1rem;
+  font-weight: 400;
+  text-transform: none;
+}
+
+.pricing h4 {
+  margin: 20px 0 0;
+  font-weight: 600;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  opacity: 0.8;
+}
+
+.pricing span.green {
+  color: #50bc01;
+  margin: 0;
+}
+
+.pricing small.green + h1 {
+  margin-top: 10px;
+}
+
+.pricing small {
+  color: black;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+.pricing ul {
+  list-style-type: none;
+  margin: 30px 0;
+}
+
+i {
+  color: #50bc01;
+  margin-right: 8px;
+}
+
+.fa-xmark {
+  color: rgba(232, 0, 0, 0.881);
+}
+
+.pricing ul li {
+  margin: 20px 30px;
+  text-transform: lowercase;
+  font-size: 0.9rem;
+  text-align: left;
+}
+
+button {
+  background-color: #5caefe;
+  border: 0;
+  font-weight: 700;
+  border-radius: 2px;
+  color: #fff;
+  padding: 10px 20px;
+  margin: 0 0 30px;
+  cursor: pointer;
+}
+
+/* responsive ===  */
+
+@media screen and (max-width: 746px) {
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    height: 200%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "Roboto", sans-serif;
+    gap: 0px;
+  }
+
+  h1 {
+    font-size: 0.9rem;
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+
+  p {
+    font-size: 0.6rem;
+    margin: 5px 0 10px;
+    color: white;
+    font-family: "Mooli", sans-serif;
+  }
+
+  .pricing-container {
+    flex-direction: column;
+  }
+
+  .pricing {
+    margin: 10px 0;
+    width: 200px;
+  }
+
+  .pricing h1 {
+    margin: 10px 0 0;
+    font-weight: 600;
+    font-size: 1rem;
+  }
+
+  .pricing .month {
+    font-size: 0.5rem;
+  }
+
+  .pricing h4 {
+    margin: 10px 0 0;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    opacity: 0.8;
+  }
+
+  .pricing ul {
+    list-style-type: none;
+    margin: 15px 0;
+  }
+
+  .pricing ul li {
+    font-size: 0.7rem;
+  }
+}
